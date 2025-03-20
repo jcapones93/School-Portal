@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admissions Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admissions.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <div class="loader-text">I S School of Technology and Skills Development Inc Portal</div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">IS</div>
+                    <span>ISSTSD Inc.</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="student-life.html">Student Life</a></li>
+                    <li><a href="admissions.html" class="active">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+          
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="student-life.html">Student Life</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-buttons">
+            <a href="#" class="btn btn-outline">Portal Login</a>
+            <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="mobile-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated fadeInUp">Join Our <span class="highlight">Community</span></h1>
+                <p class="animated fadeInUp delay-1">ISSTSD Inc. welcomes students who are curious, motivated, and eager to make a positive impact on the world.</p>
+                <div class="hero-buttons animated fadeInUp delay-2">
+                    <a href="#apply-now" class="btn btn-primary btn-lg">Apply Now</a>
+                    <a href="#visit" class="btn btn-outline btn-lg">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Admissions Process Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Admissions <span class="highlight">Process</span></h2>
+                <p>Our thoughtful admissions process is designed to identify students who will thrive in our challenging and supportive environment.</p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Inquire</h3>
+                        <p>Begin by exploring our website, attending an information session, or contacting our admissions office to learn more about our programs and community.</p>
+                        <a href="#" class="btn btn-sm btn-outline">Request Information</a>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Visit</h3>
+                        <p>Schedule a campus tour to experience our vibrant community firsthand. Meet with faculty, observe classes, and speak with current students.</p>
+                        <a href="#visit" class="btn btn-sm btn-outline">Schedule a Visit</a>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Apply</h3>
+                        <p>Complete our online application, including student and parent statements, teacher recommendations, and academic records.</p>
+                        <a href="#apply-now" class="btn btn-sm btn-outline">Begin Application</a>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Interview</h3>
+                        <p>Participate in a personal interview with a member of our admissions team. This is an opportunity for us to get to know you better and for you to ask questions.</p>
+                        <a href="#" class="btn btn-sm btn-outline">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Decision</h3>
+                        <p>Admissions decisions are released according to our notification timeline. Accepted students will receive enrollment information and next steps.</p>
+                        <a href="#" class="btn btn-sm btn-outline">View Timeline</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-header">
+                    <h3>Key Dates & Deadlines</h3>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-item">
+                        <div class="timeline-date">October 1</div>
+                        <div class="timeline-info">
+                            <h4>Application Opens</h4>
+                            <p>Online application becomes available for the upcoming academic year</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">December 15</div>
+                        <div class="timeline-info">
+                            <h4>Priority Application Deadline</h4>
+                            <p>For priority consideration and maximum financial aid eligibility</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">January 31</div>
+                        <div class="timeline-info">
+                            <h4>Regular Application Deadline</h4>
+                            <p>Final deadline for all application materials</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">February</div>
+                        <div class="timeline-info">
+                            <h4>Interviews</h4>
+                            <p>Admissions interviews conducted for qualified applicants</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">March 15</div>
+                        <div class="timeline-info">
+                            <h4>Admissions Decisions</h4>
+                            <p>Decision notifications sent to all applicants</p>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">April 15</div>
+                        <div class="timeline-info">
+                            <h4>Enrollment Deadline</h4>
+                            <p>Deadline for accepted students to confirm enrollment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Requirements Section -->
+    <!-- <section class="requirements-section" id="requirements">
+        <div class="container">
+            <div class="section-header">
+                <h2>Application <span class="highlight">Requirements</span></h2>
+                <p>A complete application includes the following components.</p>
+            </div>
+            
+            <div class="requirements-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="elementary">Elementary School (K-5)</button>
+                    <button class="tab-btn" data-tab="middle">Middle School (6-8)</button>
+                    <button class="tab-btn" data-tab="high">High School (9-12)</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="elementary">
+                        <div class="requirements-grid">
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <h3>Application Form</h3>
+                                <p>Complete online application with basic student and family information.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <h3>Application Fee</h3>
+                                <p>$75 non-refundable application fee (fee waivers available).</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <h3>Parent Statement</h3>
+                                <p>Parents describe their child's strengths, interests, and areas for growth.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <h3>Teacher Recommendation</h3>
+                                <p>One recommendation from current teacher (two for grades 3-5).</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>School Records</h3>
+                                <p>Recent report cards and any standardized test scores if available.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Student Visit</h3>
+                                <p>Classroom visit and age-appropriate assessment activities.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="middle">
+                        <div class="requirements-grid">
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <h3>Application Form</h3>
+                                <p>Complete online application with student and family information.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <h3>Application Fee</h3>
+                                <p>$100 non-refundable application fee (fee waivers available).</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-pen"></i>
+                                </div>
+                                <h3>Student Essay</h3>
+                                <p>Short essay responses to grade-appropriate prompts.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <h3>Parent Statement</h3>
+                                <p>Parents describe their child and educational goals.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <h3>Teacher Recommendations</h3>
+                                <p>Recommendations from current English and Math teachers.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>Academic Records</h3>
+                                <p>Last two years of report cards and standardized test scores.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Interview</h3>
+                                <p>Student and parent interview with admissions representative.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <h3>Entrance Assessment</h3>
+                                <p>Grade-level assessment in reading, writing, and mathematics.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="high">
+                        <div class="requirements-grid">
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <h3>Application Form</h3>
+                                <p>Complete online application with student and family information.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-dollar-sign"></i>
+                                </div>
+                                <h3>Application Fee</h3>
+                                <p>$125 non-refundable application fee (fee waivers available).</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-pen"></i>
+                                </div>
+                                <h3>Student Essays</h3>
+                                <p>Personal statement and short essay responses to prompts.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-user-friends"></i>
+                                </div>
+                                <h3>Parent Statement</h3>
+                                <p>Parents describe their child and educational goals.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                </div>
+                                <h3>Teacher Recommendations</h3>
+                                <p>Recommendations from current English, Math, and one other teacher.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <h3>Academic Records</h3>
+                                <p>Last three years of transcripts and standardized test scores.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                                <h3>Interview</h3>
+                                <p>Student and parent interview with admissions representative.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-clipboard-check"></i>
+                                </div>
+                                <h3>Entrance Assessment</h3>
+                                <p>Grade-level assessment or SSAT/ISEE test scores.</p>
+                            </div>
+                            
+                            <div class="requirement-card">
+                                <div class="requirement-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <h3>Activities Resume</h3>
+                                <p>Summary of extracurricular activities, community service, and achievements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Tuition & Financial Aid Section -->
+    <!-- <section class="tuition-section" id="tuition">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tuition & <span class="highlight">Financial Aid</span></h2>
+                <p>We are committed to making a Brightfield education accessible to qualified students from diverse socioeconomic backgrounds.</p>
+            </div>
+            
+            <div class="tuition-content">
+                <div class="tuition-info">
+                    <h3>2025-2026 Tuition</h3>
+                    <p>Tuition includes all academic programs, textbooks, technology resources, and most field trips. Additional fees may apply for certain extracurricular activities, specialized programs, and extended care.</p>
+                    
+                    <div class="tuition-table-wrapper">
+                        <table class="tuition-table">
+                            <thead>
+                                <tr>
+                                    <th>Grade Level</th>
+                                    <th>Annual Tuition</th>
+                                    <th>Payment Plans</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Kindergarten</td>
+                                    <td>$24,500</td>
+                                    <td>Annual, Semester, Monthly</td>
+                                </tr>
+                                <tr>
+                                    <td>Grades 1-5</td>
+                                    <td>$26,800</td>
+                                    <td>Annual, Semester, Monthly</td>
+                                </tr>
+                                <tr>
+                                    <td>Grades 6-8</td>
+                                    <td>$28,900</td>
+                                    <td>Annual, Semester, Monthly</td>
+                                </tr>
+                                <tr>
+                                    <td>Grades 9-12</td>
+                                    <td>$32,500</td>
+                                    <td>Annual, Semester, Monthly</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="tuition-notes">
+                        <p><strong>New Student Fee:</strong> $1,500 one-time fee for new students</p>
+                        <p><strong>Annual Enrollment Fee:</strong> $750 per student</p>
+                        <p><strong>Payment Plans:</strong> Multiple payment options available with no additional fee</p>
+                    </div>
+                </div>
+                
+                <div class="financial-aid">
+                    <h3>Financial Aid</h3>
+                    <p>Brightfield Academy is committed to socioeconomic diversity and making our education accessible to qualified students regardless of financial circumstances. We offer need-based financial aid to families who demonstrate financial need.</p>
+                    
+                    <div class="aid-stats">
+                        <div class="aid-stat">
+                            <div class="stat-number">25%</div>
+                            <div class="stat-label">of students receive financial aid</div>
+                        </div>
+                        <div class="aid-stat">
+                            <div class="stat-number">$4.2M</div>
+                            <div class="stat-label">awarded annually in aid</div>
+                        </div>
+                        <div class="aid-stat">
+                            <div class="stat-number">$5K-25K</div>
+                            <div class="stat-label">typical aid range</div>
+                        </div>
+                    </div>
+                    
+                    <div class="aid-process">
+                        <h4>Financial Aid Process</h4>
+                        <ol>
+                            <li>Complete financial aid application through School and Student Services (SSS)</li>
+                            <li>Submit required tax documents and financial information</li>
+                            <li>Financial aid committee reviews applications and determines awards</li>
+                            <li>Aid decisions are communicated with admissions decisions</li>
+                        </ol>
+                        <p><strong>Priority Deadline:</strong> January 15 for maximum consideration</p>
+                    </div>
+                    
+                    <div class="aid-cta">
+                        <a href="#" class="btn btn-primary">Apply for Financial Aid</a>
+                        <a href="#" class="btn btn-outline">Financial Aid FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Visit & Tour Section -->
+    <section class="visit-section" id="visit">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit <span class="highlight">Our Campus</span></h2>
+                <p>Experience our vibrant community firsthand through a campus tour or admissions event.</p>
+            </div>
+            
+            <div class="visit-options">
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Campus Tours</h3>
+                    <p>Join us for a personalized campus tour led by a member of our admissions team and current students. Tours include classroom visits, facility highlights, and Q&A opportunities.</p>
+                    <p><strong>Available:</strong> Tuesday and Thursday mornings, 9:00 AM - 11:00 AM</p>
+                    <a href="#" class="btn btn-primary">Schedule a Tour</a>
+                </div>
+                
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Information Sessions</h3>
+                    <p>Attend a comprehensive presentation about our academic programs, student life, and admissions process. Meet administrators, faculty, and current parents.</p>
+                    <p><strong>Upcoming Sessions:</strong> October 15, November 12, December 10</p>
+                    <a href="#" class="btn btn-primary">Register for a Session</a>
+                </div>
+                
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Student Shadow Days</h3>
+                    <p>Prospective middle and high school students can experience a day in the life of a Brightfield student by shadowing a current student through their daily schedule.</p>
+                    <p><strong>Available:</strong> Select Mondays and Wednesdays, October through February</p>
+                    <a href="#" class="btn btn-primary">Request a Shadow Day</a>
+                </div>
+                
+                <div class="visit-card">
+                    <div class="visit-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Open Houses</h3>
+                    <p>Join us for a comprehensive showcase of our programs, facilities, and community. Meet faculty, students, and parents while exploring all aspects of Brightfield Academy.</p>
+                    <p><strong>Upcoming Open Houses:</strong> October 22, January 21, April 15</p>
+                    <a href="#" class="btn btn-primary">RSVP for Open House</a>
+                </div>
+            </div>
+            
+            <div class="virtual-tour">
+                <h3>Virtual Tour</h3>
+                <p>Can't visit in person? Explore our campus through our interactive virtual tour.</p>
+                <div class="tour-preview">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Campus Virtual Tour">
+                    <div class="play-button" id="virtual-tour-btn">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <a href="#" class="btn btn-primary">Start Virtual Tour</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apply Now Section -->
+    <section class="apply-section enrollment-apply-section" id="enroll-now">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Ready to <span class="highlight">Enroll?</span></h2>
+                <p>Begin your journey at I S School of Technology and Skills Development Inc. for A.Y. 2025-2026</p>
+            </div>
+            
+            <div class="apply-content">
+                <div class="apply-info">
+                    <h3>Enrollment Now Open for Grades 11 & 12</h3>
+                    <p>Enroll today and get a <strong>FREE PE uniform</strong> and <strong>school ID</strong> upon registration. Our streamlined enrollment process makes it easy to secure your spot for the upcoming academic year.</p>
+                    
+                    <div class="apply-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>VOUCHER AND ESC ACCEPTED</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>NO TOP UP</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>NO HIDDEN CHARGES</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>NO ENTRANCE EXAM</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>NO TUITION FEE</span>
+                        </div>
+                    </div>
+                    
+                    <div class="apply-cta">
+                        <a href="#" class="btn btn-secondary btn-lg">Enroll Now</a>
+                        <a href="https://forms.gle/LRaxgM5YuUndXGee9" target="_blank" class="btn btn-outline btn-lg">Online Registration</a>
+                    </div>
+                </div>
+                
+                <div class="apply-contact">
+                    <h3>Contact Us</h3>
+                    <p>Our admissions team is here to help you through every step of the enrollment process.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>0997 440 9489</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>schoolinternational103@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span><a href="https://www.facebook.com/isstsd.florida" target="_blank">facebook.com/isstsd.florida</a></span>
+                        </div>
+                    </div>
+                    
+                    <div class="qr-code-container">
+                        <div class="qr-image">
+                            <img src="qrcode.png" alt="QR Code for Online Registration">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="enrollment-requirements">
+                <h3>Senior High School Requirements</h3>
+                <div class="requirements-grid">
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="requirement-text">Form 138 (Report Card)</div>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <div class="requirement-text">Certificate of Good Moral Character</div>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-id-card"></i>
+                        </div>
+                        <div class="requirement-text">2"x2" ID Picture (White Background) - 2pcs.</div>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-copy"></i>
+                        </div>
+                        <div class="requirement-text">Photocopy of PSA Birth Certificate</div>
+                    </div>
+                    <div class="requirement-item">
+                        <div class="requirement-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <div class="requirement-text">ESC Certificate, if a graduate of a private Junior High School</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="eligible-students-section">
+                <h3>Who Can Enroll</h3>
+                <div class="student-types-grid">
+                    <div class="student-type-item">
+                        <div class="student-type-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <div class="student-type-text">ALS PASSER</div>
+                    </div>
+                    <div class="student-type-item">
+                        <div class="student-type-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="student-type-text">G10 PUBLIC & PRIVATE COMPLETER</div>
+                    </div>
+                    <div class="student-type-item">
+                        <div class="student-type-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <div class="student-type-text">TRANSFEREE</div>
+                    </div>
+                    <div class="student-type-item">
+                        <div class="student-type-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <div class="student-type-text">BALIK ARAL LEARNER</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <p>Find answers to common questions about our admissions process.</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the average class size at ISSTSD Inc. ?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam at orci dictum dictum. Nam sollicitudin condimentum nisl, a aliquet purus pulvinar a. </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How competitive is the admissions process?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam at orci dictum dictum. Nam sollicitudin condimentum nisl, a aliquet purus pulvinar a. </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you offer transportation services?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam at orci dictum dictum. Nam sollicitudin condimentum nisl, a aliquet purus pulvinar a. .</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What support services are available for students with learning differences?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam at orci dictum dictum. Nam sollicitudin condimentum nisl, a aliquet purus pulvinar a. .</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is there a waitlist if my child is not accepted initially?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam at orci dictum dictum. Nam sollicitudin condimentum nisl, a aliquet purus pulvinar a. </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What is the school's approach to technology?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus iaculis diam at orci dictum dictum. Nam sollicitudin condimentum nisl, a aliquet purus pulvinar a. </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="faq-more">
+                <a href="#" class="btn btn-primary">View All FAQs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Parent & Student <span class="highlight">Testimonials</span></h2>
+                <p>Hear from members of our community about their Brightfield experience.</p>
+            </div>
+            
+            <div class="testimonial-slider">
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>Choosing ISSTSD Inc. for our daughter was one of the best decisions we've made as parents. The supportive community, dedicated teachers, and challenging curriculum have helped her develop confidence, critical thinking skills, and a genuine love of learning.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Parent">
+                            </div>
+                            <div class="author-info">
+                                <h4>Jennifer Thompson</h4>
+                                <p>Parent of 11th Grader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>As a transfer student, I was nervous about fitting in at a new school. From day one, I felt welcomed by both teachers and students. The small classes allow for meaningful discussions, and I've had opportunities here that I never would have had at my previous school.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Student">
+                            </div>
+                            <div class="author-info">
+                                <h4>Marcus Johnson</h4>
+                                <p>11th Grade Student</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-slide">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>The admissions process at ISSTSD Inc. was thorough but welcoming. The team took the time to get to know our son as a whole person, not just his academic record. Now in his second year, we've seen him thrive academically and socially in ways we couldn't have imagined.</p>
+                        <div class="testimonial-author">
+                            <div class="author-image">
+                                <img src="https://randomuser.me/api/portraits/men/42.jpg" alt="Parent">
+                            </div>
+                            <div class="author-info">
+                                <h4>David Chen</h4>
+                                <p>Parent of 12th Grader</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonial-controls">
+                <button id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Begin Your <span class="highlight">ISSTSD Inc. Journey</span></h2>
+                <p>Take the first step toward joining our vibrant learning community.</p>
+                <div class="cta-buttons">
+                    <a href="#apply-now" class="btn btn-primary btn-lg">Apply Now</a>
+                    <a href="#visit" class="btn btn-outline btn-lg">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="logo-icon">IS</div>
+                            <span>ISSTSD Inc.</span>
+                        </a>
+                    </div>
+                    <p>Empowering students to achieve excellence through innovation and dedication since 2010.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="student-life.html">Student Life</a></li>
+                            <li><a href="news.html">News & Events</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">School Calendar</a></li>
+                            <li><a href="#">Parent Portal</a></li>
+                            <li><a href="#">Student Portal</a></li>
+                            <li><a href="#">Faculty & Staff</a></li>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i>Sampang Bldg Alvendia St Poblacion<br>Floridablanca</li>
+                            <li><i class="fas fa-phone"></i> 0997 440 9489</li>
+                            <li><i class="fas fa-envelope"></i> schoolinternational103@gmail.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2025</span>  I S School of Technology and Skills Development Inc. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="admissions.js"></script>
+</body>
+</html>

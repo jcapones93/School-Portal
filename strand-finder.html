@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strand Finder Quiz Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="strand-finder.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header would be here -->
+
+    <div class="page-banner">
+        <div class="container">
+            <h1>Discover Your Academic Path</h1>
+            <p>Answer a few questions to find out which academic strand suits you best.</p>
+        </div>
+    </div>
+
+    <div class="strand-finder-container">
+        <div class="container">
+            <a href="index.html" class="back-link"><i class="fas fa-chevron-left"></i> Back to Home</a>
+
+            <div class="quiz-container" id="quiz-container">
+                <div class="quiz-header">
+                    <div class="quiz-info">
+                        <div class="quiz-timer" id="quiz-timer">00:00</div>
+                        <div class="quiz-tips">
+                            <button class="tips-btn" id="tips-btn"><i class="fas fa-lightbulb"></i> Tips</button>
+                            <div class="tips-popup" id="tips-popup">
+                                <p>Answer honestly for the most accurate results.</p>
+                                <p>Consider your natural interests, not what others expect.</p>
+                                <p>Take your time - there's no rush!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="progress-info">
+                        <span id="question-progress">Question 1 of 10</span>
+                        <span id="progress-percentage">0% Complete</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" id="progress-bar"></div>
+                    </div>
+                </div>
+
+                <div class="question-container" id="question-container">
+                    <!-- Questions will be inserted here by JavaScript -->
+                </div>
+
+                <div class="quiz-navigation">
+                    <button id="prev-btn" class="btn btn-outline" disabled><i class="fas fa-chevron-left"></i> Previous</button>
+                    <button id="next-btn" class="btn btn-primary" disabled>Next <i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+            <!-- Analysis Loading Screen -->
+            <div class="analysis-container" id="analysis-container" style="display: none;">
+                <div class="analysis-content">
+                    <div class="analysis-header">
+                        <h2>Analyzing Your Responses</h2>
+                        <p>Our advanced algorithm is processing your answers to find your perfect academic strand match.</p>
+                    </div>
+                    
+                    <div class="analysis-progress">
+                        <div class="analysis-progress-bar" id="analysis-progress-bar"></div>
+                        <div class="analysis-percentage" id="analysis-percentage">0%</div>
+                    </div>
+                    
+                    <div class="analysis-steps">
+                        <div class="analysis-step" id="step-1">
+                            <div class="step-icon"><i class="fas fa-brain"></i></div>
+                            <div class="step-content">
+                                <h4>Processing Responses</h4>
+                                <p>Analyzing your answers and preferences...</p>
+                            </div>
+                            <div class="step-status"><i class="fas fa-spinner fa-spin"></i></div>
+                        </div>
+                        
+                        <div class="analysis-step" id="step-2">
+                            <div class="step-icon"><i class="fas fa-chart-pie"></i></div>
+                            <div class="step-content">
+                                <h4>Calculating Compatibility</h4>
+                                <p>Determining your compatibility with each strand...</p>
+                            </div>
+                            <div class="step-status"><i class="fas fa-hourglass-half"></i></div>
+                        </div>
+                        
+                        <div class="analysis-step" id="step-3">
+                            <div class="step-icon"><i class="fas fa-graduation-cap"></i></div>
+                            <div class="step-content">
+                                <h4>Identifying Optimal Strand</h4>
+                                <p>Finding your best academic path match...</p>
+                            </div>
+                            <div class="step-status"><i class="fas fa-hourglass-half"></i></div>
+                        </div>
+                        
+                        <div class="analysis-step" id="step-4">
+                            <div class="step-icon"><i class="fas fa-briefcase"></i></div>
+                            <div class="step-content">
+                                <h4>Mapping Career Paths</h4>
+                                <p>Exploring potential career opportunities...</p>
+                            </div>
+                            <div class="step-status"><i class="fas fa-hourglass-half"></i></div>
+                        </div>
+                        
+                        <div class="analysis-step" id="step-5">
+                            <div class="step-icon"><i class="fas fa-file-alt"></i></div>
+                            <div class="step-content">
+                                <h4>Generating Report</h4>
+                                <p>Creating your personalized strand recommendation...</p>
+                            </div>
+                            <div class="step-status"><i class="fas fa-hourglass-half"></i></div>
+                        </div>
+                    </div>
+                    
+                    <div class="analysis-facts" id="analysis-facts">
+                        <div class="fact-label">Did you know?</div>
+                        <div class="fact-content" id="fact-content">
+                            Students who follow their natural interests are more likely to excel academically.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-container" id="results-container" style="display: none;">
+                <div class="results-header">
+                    <div class="result-badge">
+                        <div class="badge-ribbon"></div>
+                        <div id="result-icon" class="result-icon">
+                            <!-- Icon will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    <h2>Your Recommended Strand</h2>
+                    <div id="result-strand" class="result-strand">
+                        <!-- Strand will be inserted here by JavaScript -->
+                    </div>
+                    <h3 id="result-title">
+                        <!-- Strand title will be inserted here by JavaScript -->
+                    </h3>
+                    <p id="result-description">
+                        <!-- Strand description will be inserted here by JavaScript -->
+                    </p>
+                    <div class="match-percentage">
+                        <div class="match-label">Match Strength</div>
+                        <div class="match-meter">
+                            <div class="match-fill" id="match-fill"></div>
+                        </div>
+                        <div class="match-value" id="match-value">95%</div>
+                    </div>
+                </div>
+
+                <div class="results-chart">
+                    <h3>Your Strand Compatibility</h3>
+                    <div id="personality-chart" class="personality-chart">
+                        <!-- Chart will be inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="results-details">
+                    <div class="result-card">
+                        <h4><i class="fas fa-book"></i> Core Subjects</h4>
+                        <ul id="result-subjects">
+                            <!-- Subjects will be inserted here by JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="result-card">
+                        <h4><i class="fas fa-briefcase"></i> Potential Careers</h4>
+                        <ul id="result-careers">
+                            <!-- Careers will be inserted here by JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="result-card">
+                        <h4><i class="fas fa-star"></i> Key Skills</h4>
+                        <ul id="result-skills">
+                            <!-- Skills will be inserted here by JavaScript -->
+                        </ul>
+                    </div>
+                    <div class="result-card">
+                        <h4><i class="fas fa-user"></i> Personality Traits</h4>
+                        <ul id="result-personality">
+                            <!-- Personality traits will be inserted here by JavaScript -->
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="university-section">
+                    <h3><i class="fas fa-university"></i> Top Universities for This Strand</h3>
+                    <div class="university-slider" id="university-slider">
+                        <!-- Universities will be inserted here by JavaScript -->
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button id="retake-btn" class="btn btn-outline"><i class="fas fa-redo"></i> Take the Quiz Again</button>
+                    <a href="admissions.html" class="btn btn-primary">Apply for This Strand <i class="fas fa-chevron-right"></i></a>
+                    <button id="share-results" class="btn btn-secondary"><i class="fas fa-share-alt"></i> Share Results</button>
+                    <button id="print-results" class="btn btn-secondary"><i class="fas fa-print"></i> Print Results</button>
+                </div>
+            </div>
+
+            <div class="all-strands-container" id="all-strands-container" style="display: none;">
+                <h3>Explore All Strands</h3>
+                <div class="all-strands-grid" id="all-strands-grid">
+                    <!-- All strands will be inserted here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer would be here -->
+
+    <script src="strand-finder.js"></script>
+</body>
+</html>
+

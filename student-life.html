@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Life Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="student-life.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <div class="loader-text">I S School of Technology and Skills Development Inc Portal</div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">IS</div>
+                    <span>ISSTSD Inc.</span>    
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="student-life.html" class="active">Student Life</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+          
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="student-life.html">Student Life</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="mobile-buttons">
+            <a href="#" class="btn btn-outline">Portal Login</a>
+            <a href="admissions.html" class="btn btn-primary">Apply Now</a>
+        </div>
+        <div class="mobile-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated fadeInUp">Student <span class="highlight">Life</span></h1>
+                <p class="animated fadeInUp delay-1">At Brightfield Academy, we believe in educating the whole student through a rich variety of extracurricular activities and community experiences.</p>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Overview Section -->
+    <section class="overview-section">
+        <div class="container">
+            <div class="overview-content">
+                <div class="overview-text">
+                    <div class="section-subtitle">Life Beyond the Classroom</div>
+                    <h2>A Vibrant Community</h2>
+                    <p>Brightfield Academy offers a wide range of extracurricular activities that complement our academic program and help students discover their passions, develop new skills, and build lasting friendships.</p>
+                    <p>Our dedicated faculty advisors and coaches guide students as they explore interests, take on leadership roles, and contribute to our school community. We encourage all students to participate in at least one activity each semester.</p>
+                    
+                    <div class="overview-stats">
+                        <div class="stat-box">
+                            <div class="stat-number" data-count="30">0</div>
+                            <div class="stat-label">Student Clubs</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" data-count="15">0</div>
+                            <div class="stat-label">Sports Teams</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" data-count="12">0</div>
+                            <div class="stat-label">Annual Traditions</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" data-count="100">0</div>
+                            <div class="stat-label">% Student Participation</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="overview-gallery">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Students in drama production">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1232&q=80" alt="Students in science club">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80" alt="Students playing sports">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Students in art class">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities Categories Section -->
+    <section class="activities-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Extracurricular <span class="highlight">Activities</span></h2>
+                <p>Explore the diverse range of activities available to our students.</p>
+            </div>
+            
+            <div class="activities-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="athletics">
+                        <i class="fas fa-running"></i>
+                        <span>Athletics</span>
+                    </button>
+                    <button class="tab-btn" data-tab="arts">
+                        <i class="fas fa-palette"></i>
+                        <span>Arts</span>
+                    </button>
+                    <button class="tab-btn" data-tab="academic">
+                        <i class="fas fa-book"></i>
+                        <span>Academic Clubs</span>
+                    </button>
+                    <button class="tab-btn" data-tab="leadership">
+                        <i class="fas fa-users"></i>
+                        <span>Leadership</span>
+                    </button>
+                    <button class="tab-btn" data-tab="service">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>Community Service</span>
+                    </button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="athletics">
+                        <div class="activity-content">
+                            <div class="activity-image">
+                                <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80" alt="Athletics">
+                            </div>
+                            <div class="activity-details">
+                                <h3>Athletics</h3>
+                                <p>Our competitive sports program builds teamwork, discipline, and sportsmanship. Students learn valuable life skills while representing Brightfield Academy in interscholastic competitions.</p>
+                                
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-basketball-ball"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Basketball</h4>
+                                            <p>Boys & Girls Varsity, JV, and Middle School teams</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-futbol"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Soccer</h4>
+                                            <p>Boys & Girls Varsity, JV, and Middle School teams</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-swimmer"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Swimming</h4>
+                                            <p>Boys & Girls Varsity and Middle School teams</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-table-tennis"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Tennis</h4>
+                                            <p>Boys & Girls Varsity teams</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-running"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Track & Field</h4>
+                                            <p>Boys & Girls Varsity and Middle School teams</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-volleyball-ball"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Volleyball</h4>
+                                            <p>Girls Varsity, JV, and Middle School teams</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-cta">
+                                    <a href="#" class="btn btn-primary">View Athletics Calendar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="arts">
+                        <div class="activity-content">
+                            <div class="activity-image">
+                                <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Arts">
+                            </div>
+                            <div class="activity-details">
+                                <h3>Arts</h3>
+                                <p>Students express creativity through visual and performing arts programs. Our arts programs provide opportunities for creative expression, skill development, and public performance.</p>
+                                
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-music"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Choir</h4>
+                                            <p>Concert Choir, Chamber Singers, and Middle School Chorus</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-guitar"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Orchestra</h4>
+                                            <p>Symphony Orchestra, String Ensemble, and Jazz Band</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-theater-masks"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Drama Club</h4>
+                                            <p>Fall Play, Spring Musical, and One-Act Festival</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-shoe-prints"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Dance Ensemble</h4>
+                                            <p>Modern, Jazz, and Cultural Dance performances</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-paint-brush"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Studio Art</h4>
+                                            <p>Drawing, Painting, Sculpture, and Ceramics</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-camera"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Photography</h4>
+                                            <p>Digital and Film Photography with annual exhibition</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-cta">
+                                    <a href="#" class="btn btn-primary">View Arts Calendar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="academic">
+                        <div class="activity-content">
+                            <div class="activity-image">
+                                <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Academic Clubs">
+                            </div>
+                            <div class="activity-details">
+                                <h3>Academic Clubs</h3>
+                                <p>Students pursue intellectual interests beyond the classroom curriculum. Our academic clubs provide opportunities for deeper exploration of subjects and participation in competitions.</p>
+                                
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-comments"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Debate Team</h4>
+                                            <p>Competitive debate in local, regional, and national tournaments</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-calculator"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Math Olympiad</h4>
+                                            <p>Problem-solving competitions and mathematical exploration</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-flask"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Science Bowl</h4>
+                                            <p>Fast-paced science knowledge competition team</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Robotics Club</h4>
+                                            <p>Design, build, and program robots for competitions</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-globe-americas"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Model UN</h4>
+                                            <p>Simulation of United Nations committees and international relations</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-chess"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Chess Club</h4>
+                                            <p>Strategy development and competitive chess tournaments</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-cta">
+                                    <a href="#" class="btn btn-primary">View Academic Competitions</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="leadership">
+                        <div class="activity-content">
+                            <div class="activity-image">
+                                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Leadership">
+                            </div>
+                            <div class="activity-details">
+                                <h3>Leadership</h3>
+                                <p>Students develop leadership skills through service and governance. These opportunities allow students to make a positive impact on our school community while developing valuable leadership skills.</p>
+                                
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-users-cog"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Student Council</h4>
+                                            <p>Elected student government representing student interests</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-user-friends"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Peer Mentoring</h4>
+                                            <p>Upperclassmen mentoring younger students for academic and social support</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-book-open"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Yearbook Committee</h4>
+                                            <p>Design and production of the school's annual yearbook</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-newspaper"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>School Newspaper</h4>
+                                            <p>Student journalism covering school and community news</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-balance-scale"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Honor Council</h4>
+                                            <p>Promoting academic integrity and school values</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-cta">
+                                    <a href="#" class="btn btn-primary">Learn About Leadership Opportunities</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="service">
+                        <div class="activity-content">
+                            <div class="activity-image">
+                                <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Community Service">
+                            </div>
+                            <div class="activity-details">
+                                <h3>Community Service</h3>
+                                <p>Students make a positive impact through volunteer work and service projects. Our community service programs help students develop empathy, social responsibility, and a commitment to making a difference.</p>
+                                
+                                <div class="activity-list">
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-leaf"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Environmental Club</h4>
+                                            <p>Campus sustainability initiatives and community clean-up projects</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-hand-holding-heart"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Community Outreach</h4>
+                                            <p>Partnerships with local organizations to address community needs</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-home"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Habitat for Humanity</h4>
+                                            <p>Building and renovating homes for families in need</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-utensils"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Food Bank Volunteers</h4>
+                                            <p>Collecting and distributing food to combat hunger in our community</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="activity-item">
+                                        <div class="activity-icon">
+                                            <i class="fas fa-book"></i>
+                                        </div>
+                                        <div class="activity-info">
+                                            <h4>Literacy Tutors</h4>
+                                            <p>Reading and tutoring programs at local elementary schools</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="activity-cta">
+                                    <a href="#" class="btn btn-primary">View Service Opportunities</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- School Traditions Section -->
+    <section class="traditions-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>School <span class="highlight">Traditions</span></h2>
+                <p>Annual events that bring our community together and create lasting memories.</p>
+            </div>
+            
+            <div class="traditions-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="month">September</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="tradition-image">
+                            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Welcome Back Festival">
+                        </div>
+                        <div class="tradition-info">
+                            <h3>Welcome Back Festival</h3>
+                            <p>Our school year kicks off with a community celebration featuring food, games, and performances. Students and families reconnect and welcome new members to our community.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="month">October</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="tradition-image">
+                            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1232&q=80" alt="Fall Arts Festival">
+                        </div>
+                        <div class="tradition-info">
+                            <h3>Fall Arts Festival</h3>
+                            <p>A showcase of student creativity through visual arts, music, drama, and dance performances. The festival transforms our campus into an immersive arts experience.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="month">December</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="tradition-image">
+                            <img src="https://images.unsplash.com/photo-1513885535751-8b9238bd345a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Winter Concert">
+                        </div>
+                        <div class="tradition-info">
+                            <h3>Winter Concert & Giving Drive</h3>
+                            <p>Our music ensembles perform seasonal favorites while the school community comes together to support local families in need through our annual giving drive.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="month">February</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="tradition-image">
+                            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Science & Innovation Fair">
+                        </div>
+                        <div class="tradition-info">
+                            <h3>Science & Innovation Fair</h3>
+                            <p>Students showcase their research projects and innovative solutions to real-world problems. The fair includes demonstrations, guest speakers, and interactive exhibits.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="month">May</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="tradition-image">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Spring Carnival">
+                        </div>
+                        <div class="tradition-info">
+                            <h3>Spring Carnival</h3>
+                            <p>A day of outdoor fun with games, rides, food, and entertainment. This student-led event raises funds for student activities and local charities.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">
+                        <span class="month">June</span>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="tradition-image">
+                            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Graduation & Senior Celebration">
+                        </div>
+                        <div class="tradition-info">
+                            <h3>Graduation & Senior Celebration</h3>
+                            <p>We celebrate our graduating seniors with a formal ceremony followed by an all-night celebration with activities, entertainment, and special traditions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Support Section -->
+    <section class="support-section">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Student <span class="highlight">Support</span></h2>
+                <p>Resources and programs to support student well-being and success.</p>
+            </div>
+            
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Advisory Program</h3>
+                    <p>Each student is assigned to a faculty advisor who provides academic guidance, personal support, and serves as a liaison between school and home.</p>
+                    <ul class="support-list">
+                        <li><i class="fas fa-check"></i> Small advisory groups meet regularly</li>
+                        <li><i class="fas fa-check"></i> Individual check-ins and goal setting</li>
+                        <li><i class="fas fa-check"></i> Four-year relationships with advisors</li>
+                        <li><i class="fas fa-check"></i> Community-building activities</li>
+                    </ul>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Counseling Services</h3>
+                    <p>Our counseling team provides social-emotional support, academic guidance, and resources to help students navigate challenges and thrive.</p>
+                    <ul class="support-list">
+                        <li><i class="fas fa-check"></i> Individual counseling</li>
+                        <li><i class="fas fa-check"></i> Group support sessions</li>
+                        <li><i class="fas fa-check"></i> Wellness workshops</li>
+                        <li><i class="fas fa-check"></i> Crisis intervention</li>
+                    </ul>
+                </div>
+                
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Peer Support Network</h3>
+                    <p>Trained student leaders provide peer-to-peer support, mentoring, and resources to foster a positive school culture.</p>
+                    <ul class="support-list">
+                        <li><i class="fas fa-check"></i> New student orientation guides</li>
+                        <li><i class="fas fa-check"></i> Peer tutoring program</li>
+                        <li><i class="fas fa-check"></i> Conflict resolution</li>
+                        <li><i class="fas fa-check"></i> Community-building initiatives</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus Life Section -->
+    <section class="campus-life-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Campus <span class="highlight">Life</span></h2>
+                <p>Experience the vibrant daily life at Brightfield Academy.</p>
+            </div>
+            
+            <div class="campus-life-grid">
+                <div class="campus-life-item">
+                    <div class="campus-life-image">
+                        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80" alt="Student Dining">
+                        <div class="image-overlay">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                    </div>
+                    <div class="campus-life-content">
+                        <h3>Dining Services</h3>
+                        <p>Our dining program offers nutritious, made-from-scratch meals with options for all dietary needs. Students enjoy a variety of choices in our comfortable dining hall.</p>
+                        <a href="#" class="read-more">View Menu <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="campus-life-item">
+                    <div class="campus-life-image">
+                        <img src="https://images.unsplash.com/photo-1571260899304-425eee4c7efd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Student Lounge">
+                        <div class="image-overlay">
+                            <i class="fas fa-couch"></i>
+                        </div>
+                    </div>
+                    <div class="campus-life-content">
+                        <h3>Student Spaces</h3>
+                        <p>Dedicated spaces for studying, socializing, and relaxing between classes. Our student lounges, outdoor areas, and collaborative spaces foster community and connection.</p>
+                        <a href="#" class="read-more">Explore Spaces <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="campus-life-item">
+                    <div class="campus-life-image">
+                        <img src="https://images.unsplash.com/photo-1551845728-6820a30c64e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="School Store">
+                        <div class="image-overlay">
+                            <i class="fas fa-store"></i>
+                        </div>
+                    </div>
+                    <div class="campus-life-content">
+                        <h3>School Store</h3>
+                        <p>The Brightfield Bookstore offers school supplies, spirit wear, snacks, and convenience items. The store is operated by student entrepreneurs as part of our business program.</p>
+                        <a href="#" class="read-more">Visit Store <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="campus-life-item">
+                    <div class="campus-life-image">
+                        <img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Transportation">
+                        <div class="image-overlay">
+                            <i class="fas fa-bus"></i>
+                        </div>
+                    </div>
+                    <div class="campus-life-content">
+                        <h3>Transportation</h3>
+                        <p>Our transportation services include bus routes throughout the metropolitan area, carpooling coordination, and bicycle facilities for students who live nearby.</p>
+                        <a href="#" class="read-more">Transportation Options <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Section -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Student Life <span class="highlight">Gallery</span></h2>
+                <p>Glimpses of daily life and special moments at Brightfield Academy.</p>
+            </div>
+            
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="athletics">Athletics</button>
+                <button class="filter-btn" data-filter="arts">Arts</button>
+                <button class="filter-btn" data-filter="academics">Academics</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="athletics">
+                    <img src="https://images.unsplash.com/photo-1526232761682-d26e03ac148e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80" alt="Basketball Game">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Basketball Championship</h3>
+                            <p>Varsity team celebrating their regional title</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="arts">
+                    <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Music Performance">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Spring Concert</h3>
+                            <p>Orchestra and choir joint performance</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="academics">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Science Lab">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Science Exploration</h3>
+                            <p>Students conducting advanced experiments</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="School Festival">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Spring Carnival</h3>
+                            <p>Annual community celebration</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="athletics">
+                    <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Swimming Competition">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Swim Meet</h3>
+                            <p>Varsity swim team in action</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="arts">
+                    <img src="https://images.unsplash.com/photo-1460518451285-97b6aa326961?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Theater Production">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Drama Production</h3>
+                            <p>Annual spring musical performance</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="academics">
+                    <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1232&q=80" alt="Robotics Team">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Robotics Competition</h3>
+                            <p>Our award-winning robotics team</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-category="events">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Graduation">
+                    <div class="gallery-overlay">
+                        <div class="gallery-info">
+                            <h3>Graduation Day</h3>
+                            <p>Celebrating our graduating seniors</p>
+                        </div>
+                        <div class="gallery-zoom">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Gallery Modal -->
+            <div id="gallery-modal" class="modal">
+                <span class="close-modal">&times;</span>
+                <img class="modal-content" id="modal-image">
+                <div id="modal-caption"></div>
+                <a class="modal-prev">&#10094;</a>
+                <a class="modal-next">&#10095;</a>
+            </div>
+            
+            <div class="gallery-more">
+                <a href="#" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Experience <span class="highlight">Student Life</span> Firsthand</h2>
+                <p>Schedule a campus visit to see our vibrant community in action and learn more about our programs.</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html" class="btn btn-primary btn-lg">Apply Now</a>
+                    <a href="contact.html" class="btn btn-outline btn-lg">Schedule a Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="logo-icon">IS</div>
+                            <span>ISSTSD Inc.</span>
+                        </a>
+                    </div>
+                    <p>Empowering students to achieve excellence through innovation and dedication since 1985.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="student-life.html">Student Life</a></li>
+                            <li><a href="news.html">News & Events</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">School Calendar</a></li>
+                            <li><a href="#">Parent Portal</a></li>
+                            <li><a href="#">Student Portal</a></li>
+                            <li><a href="#">Faculty & Staff</a></li>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i>Sampang Bldg Alvendia St Poblacion<br>Floridablanca</li>
+                            <li><i class="fas fa-phone"></i> 0997 440 9489</li>
+                            <li><i class="fas fa-envelope"></i> schoolinternational103@gmail.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2025</span> Brightfield Academy. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="student-life.js"></script>
+</body>
+</html>

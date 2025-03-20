@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <div class="loader-text">I S School of Technology and Skills Development Inc Portal</div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <div class="logo-icon">IS</div>
+                    <span>ISSTSD Inc.</span>
+                </a>
+            </div>
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="academics.html">Academics</a></li>
+                    <li><a href="student-life.html">Student Life</a></li>
+                    <li><a href="admissions.html">Admissions</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+           
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <div class="close-menu">
+            <i class="fas fa-times"></i>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="student-life.html">Student Life</a></li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+       
+        <div class="mobile-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animated fadeInUp">Get in <span class="highlight">Touch</span></h1>
+                <p class="animated fadeInUp delay-1">We're here to answer your questions and help you learn more about ISSTSD Inc.</p>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,149.3C960,160,1056,160,1152,138.7C1248,117,1344,75,1392,53.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact <span class="highlight">Information</span></h2>
+                <p>Reach out to us through any of the following channels.</p>
+            </div>
+            
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>Sampang Bldg Alvendia St Poblacion<br>Floridablanca<br>Pampanga</p>
+                    <a href="#map" class="btn btn-sm btn-outline">View Map</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone-alt"></i>
+                    </div>
+                    <h3>Call Us</h3>
+                    <p>Main Office: (555) 123-4567<br>Admissions: (555) 123-4568<br>Fax: (555) 123-4569</p>
+                    <a href="tel:+15551234567" class="btn btn-sm btn-outline">Call Main Office</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>General Inquiries: info@isstsds.edu<br>Admissions: admissions@isstsds.edu<br>Support: support@isstsds.edu</p>
+                    <a href="mailto:info@isstsds.edu" class="btn btn-sm btn-outline">Send Email</a>
+                </div>
+                
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Office Hours</h3>
+                    <p>Monday-Friday: 8:00 AM - 4:00 PM<br>Saturday: 9:00 AM - 12:00 PM (Admissions Only)<br>Sunday: Closed</p>
+                    <a href="#" class="btn btn-sm btn-outline">Schedule a Visit</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2>Send Us a Message</h2>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="" selected disabled>Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="admissions">Admissions Information</option>
+                            <option value="tour">Schedule a Tour</option>
+                            <option value="academics">Academic Programs</option>
+                            <option value="financial">Financial Aid & Tuition</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to our newsletter for updates and events</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </div>
+                </form>
+                
+                <div id="form-success" class="form-success">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Thank You!</h3>
+                    <p>Your message has been sent successfully. We'll get back to you shortly.</p>
+                    <button class="btn btn-primary" id="send-another">Send Another Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section" id="map">
+        <div class="container">
+            <div class="section-header">
+                <h2>Find <span class="highlight">Us</span></h2>
+                <p>Visit our campus and experience ISSTSD Inc firsthand.</p>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-wrapper">
+                    <!-- In a real implementation, this would be replaced with an actual Google Maps or other map service embed -->
+                    <img src="https://maps.app.goo.gl/X4d9Ly3y391FiKY76" alt="Map of ISSTSD Inc" class="map-placeholder">
+                    <div class="map-overlay">
+                        <p>Interactive map would be displayed here in a real implementation.</p>
+                        <a href="https://maps.app.goo.gl/X4d9Ly3y391FiKY76" target="_blank" class="btn btn-primary">Open in Google Maps</a>
+                    </div>
+                </div>
+                
+                <div class="directions">
+                    <h3>Directions</h3>
+                    <div class="direction-tabs">
+                        <button class="tab-btn active" data-tab="driving">
+                            <i class="fas fa-car"></i> Driving
+                        </button>
+                        <button class="tab-btn" data-tab="public">
+                            <i class="fas fa-bus"></i> Public Transit
+                        </button>
+                        <button class="tab-btn" data-tab="walking">
+                            <i class="fas fa-walking"></i> Walking
+                        </button>
+                    </div>
+                    
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="driving">
+                            <h4>From Downtown:</h4>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.d</li>
+                                <li>Lorem ipsum dolor site</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
+                            </ol>
+                            <p><strong>Parking:</strong> Visitor parking is available in Lot A, located at the main entrance.</p>
+                        </div>
+                        
+                        <div class="tab-pane" id="public">
+                            <h4>By Jeepney:</h4>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adip</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing</li>
+                            </ul>
+                            <h4>By Tricycle:</h4>
+                            <ul>
+                                <li>Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="tab-pane" id="walking">
+                            <h4>From Downtown Transit Center:</h4>
+                            <ol>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit amet, consectetur</li>
+                                <li>Lorem ipsum dolor sit ame</li>
+                                <li>Lorem ipsum dolor sit adipiscing</li>
+                                <li>Lorem ipsum dolor sit ame amet, consectetu</li>
+                            </ol>
+                            <p><strong>Walking Time:</strong> Approximately 35-40 minutes</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Department Directory Section -->
+    <section class="directory-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Department <span class="highlight">Directory</span></h2>
+                <p>Connect with the right department for your specific needs.</p>
+            </div>
+            
+            <div class="directory-search">
+                <input type="text" id="directory-search-input" placeholder="Search departments or staff...">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+            
+            <div class="directory-grid">
+                <div class="directory-card" data-department="administration">
+                    <div class="directory-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Administration</h3>
+                    <ul class="directory-contacts">
+                        <li>
+                            <span class="contact-name">Dr. Sarah Johnson</span>
+                            <span class="contact-title">Head of School</span>
+                            <span class="contact-email">sjohnson@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4570</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Michael Chen</span>
+                            <span class="contact-title">Assistant Head of School</span>
+                            <span class="contact-email">mchen@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4571</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Patricia Rodriguez</span>
+                            <span class="contact-title">Executive Assistant</span>
+                            <span class="contact-email">prodriguez@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4572</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="directory-card" data-department="admissions">
+                    <div class="directory-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Admissions</h3>
+                    <ul class="directory-contacts">
+                        <li>
+                            <span class="contact-name">James Wilson</span>
+                            <span class="contact-title">Director of Admissions</span>
+                            <span class="contact-email">jwilson@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4568</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Sophia Lee</span>
+                            <span class="contact-title">Admissions Counselor</span>
+                            <span class="contact-email">slee@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4573</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Robert Martinez</span>
+                            <span class="contact-title">Admissions Counselor</span>
+                            <span class="contact-email">rmartinez@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4574</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="directory-card" data-department="academics">
+                    <div class="directory-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Academics</h3>
+                    <ul class="directory-contacts">
+                        <li>
+                            <span class="contact-name">Dr. Emily Thompson</span>
+                            <span class="contact-title">Academic Dean</span>
+                            <span class="contact-email">ethompson@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4575</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">David Kim</span>
+                            <span class="contact-title">Lower School Principal</span>
+                            <span class="contact-email">dkim@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4576</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Jennifer Garcia</span>
+                            <span class="contact-title">Upper School Principal</span>
+                            <span class="contact-email">jgarcia@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4577</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="directory-card" data-department="student-life">
+                    <div class="directory-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Student Life</h3>
+                    <ul class="directory-contacts">
+                        <li>
+                            <span class="contact-name">Marcus Brown</span>
+                            <span class="contact-title">Director of Student Life</span>
+                            <span class="contact-email">mbrown@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4578</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Olivia Taylor</span>
+                            <span class="contact-title">Athletics Director</span>
+                            <span class="contact-email">otaylor@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4579</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Daniel Washington</span>
+                            <span class="contact-title">Arts Program Coordinator</span>
+                            <span class="contact-email">dwashington@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4580</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="directory-card" data-department="finance">
+                    <div class="directory-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Finance & Operations</h3>
+                    <ul class="directory-contacts">
+                        <li>
+                            <span class="contact-name">Lisa Patel</span>
+                            <span class="contact-title">Chief Financial Officer</span>
+                            <span class="contact-email">lpatel@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4581</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Thomas Anderson</span>
+                            <span class="contact-title">Financial Aid Director</span>
+                            <span class="contact-email">tanderson@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4582</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Rachel Williams</span>
+                            <span class="contact-title">Facilities Manager</span>
+                            <span class="contact-email">rwilliams@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4583</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="directory-card" data-department="technology">
+                    <div class="directory-icon">
+                        <i class="fas fa-laptop"></i>
+                    </div>
+                    <h3>Technology</h3>
+                    <ul class="directory-contacts">
+                        <li>
+                            <span class="contact-name">Kevin Nguyen</span>
+                            <span class="contact-title">Director of Technology</span>
+                            <span class="contact-email">knguyen@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4584</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Samantha Lewis</span>
+                            <span class="contact-title">Educational Technology Specialist</span>
+                            <span class="contact-email">slewis@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4585</span>
+                        </li>
+                        <li>
+                            <span class="contact-name">Brandon Clark</span>
+                            <span class="contact-title">IT Support Specialist</span>
+                            <span class="contact-email">bclark@isstsds.edu</span>
+                            <span class="contact-phone">(555) 123-4586</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <div class="container">
+            <div class="section-header light">
+                <h2>Connect With <span class="highlight">Us</span></h2>
+                <p>Follow us on social media to stay updated on the latest news and events.</p>
+            </div>
+            
+            <div class="social-grid">
+                <a href="#" class="social-card facebook">
+                    <div class="social-icon">
+                        <i class="fab fa-facebook-f"></i>
+                    </div>
+                    <h3>Facebook</h3>
+                    <p>@ISSTSDInc</p>
+                </a>
+                
+                <a href="#" class="social-card twitter">
+                    <div class="social-icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <h3>Twitter</h3>
+                    <p>@ISSTSD_Inc</p>
+                </a>
+                
+                <a href="#" class="social-card instagram">
+                    <div class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@ISSTSD_pampanga</p>
+                </a>
+                
+                <a href="#" class="social-card linkedin">
+                    <div class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>ISSTSD Incy</p>
+                </a>
+                
+                <a href="#" class="social-card youtube">
+                    <div class="social-icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3>YouTube</h3>
+                    <p>ISSTSD Channel</p>
+                </a>
+                
+                <a href="#" class="social-card flickr">
+                    <div class="social-icon">
+                        <i class="fab fa-flickr"></i>
+                    </div>
+                    <h3>Flickr</h3>
+                    <p>ISSTSD Inc Photos</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <p>Find quick answers to common questions.</p>
+            </div>
+            
+            <div class="faq-accordion">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are your office hours?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our main office is open Monday through Friday from 8:00 AM to 4:00 PM. The Admissions Office is also open on Saturdays from 9:00 AM to 12:00 PM. All offices are closed on Sundays and school holidays.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I schedule a campus tour?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Campus tours are available Tuesday and Thursday mornings from 9:00 AM to 11:00 AM. You can schedule a tour by contacting our Admissions Office at (555) 123-4568 or by filling out the tour request form on our Admissions page.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Who should I contact about financial aid?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For questions about financial aid, please contact Thomas Anderson, our Financial Aid Director, at tanderson@isstsds.edu or (555) 123-4582. You can also find detailed information about our financial aid process on the Admissions page.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I report a student absence?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>To report a student absence, please call our attendance line at (555) 123-4590 before 8:30 AM on the day of the absence. You can also report an absence through the Parent Portal or by emailing attendance@isstsds.edu.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I apply for a teaching position?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>All current job openings are listed on the Careers page of our website. To apply, please submit your resume, cover letter, and teaching philosophy to careers@isstsds.edu. For specific questions about employment opportunities, contact our Human Resources department at (555) 123-4587.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to <span class="highlight">Visit Us?</span></h2>
+                <p>Schedule a campus tour to experience ISSTSD Inc firsthand.</p>
+                <div class="cta-buttons">
+                    <a href="admissions.html#visit" class="btn btn-primary btn-lg">Schedule a Tour</a>
+                    <a href="admissions.html" class="btn btn-outline btn-lg">Apply Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="thank-you-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h2>Thank You for Your <span class="highlight">Interest</span></h2>
+                <p>We appreciate your interest in ISSTSD Inc and look forward to connecting with you. Our team is committed to providing prompt and helpful responses to all inquiries.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="logo-icon">IS</div>
+                            <span>ISSTSD Inc.</span>
+                        </a>
+                    </div>
+                    <p>Empowering students to achieve excellence through innovation and dedication since 1985.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="academics.html">Academics</a></li>
+                            <li><a href="admissions.html">Admissions</a></li>
+                            <li><a href="student-life.html">Student Life</a></li>
+                            <li><a href="news.html">News & Events</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">School Calendar</a></li>
+                            <li><a href="#">Parent Portal</a></li>
+                            <li><a href="#">Student Portal</a></li>
+                            <li><a href="#">Faculty & Staff</a></li>
+                            <li><a href="#">Alumni</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li><i class="fas fa-map-marker-alt"></i>Sampang Bldg Alvendia St Poblacion<br>Floridablanca</li>
+                            <li><i class="fas fa-phone"></i> 0997 440 9489</li>
+                            <li><i class="fas fa-envelope"></i> schoolinternational103@gmail.com</li>
+                            <li><i class="fas fa-clock"></i> Mon-Fri: 8:00 AM - 4:00 PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>&copy; <span id="current-year">2025</span>  I S School of Technology and Skills Development Inc. All rights reserved.</p>
+                </div>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Accessibility</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
